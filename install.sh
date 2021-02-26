@@ -31,7 +31,7 @@ done=false
 
 output "Pterodactyl installation script @ $SCRIPT_VERSION"
 output
-output "Copyright (C) 2018 - 2021, Vilhelm Prytz, <vilhelm@prytznet.se>"
+output "Copyright (C) 2018 - 2021, Layttos, <louisonhachemi97@icloud.com>"
 output "https://github.com/vilhelmprytz/pterodactyl-installer"
 output
 output "Sponsoring/Donations: https://github.com/vilhelmprytz/pterodactyl-installer?sponsor=1"
@@ -65,17 +65,17 @@ canary_wings() {
 
 while [ "$done" == false ]; do
   options=(
-    "Install the panel"
-    "Install Wings"
-    "Install both [0] and [1] on the same machine (wings script runs after panel)\n"
+    "Installer le panel"
+    "Install les Wings"
+    "Installer [0] et [1] sur la même machine (les Wings seront automatiquement lanées)\n"
 
-    "Install 0.7 version of panel (unsupported, no longer maintained!)"
-    "Install 0.6 version of daemon (works with panel 0.7, no longer maintained!)"
-    "Install both [3] and [4] on the same machine (daemon script runs after panel)\n"
+    "Installer le panel 0.7"
+    "Install le Daemon 0.6"
+    "Installer [3] et [4] sur la même machine (Le Daemon sera automatiquement lancé)\n"
 
-    "Install panel with canary version of the script (the versions that lives in master, may be broken!)"
-    "Install Wings with canary version of the script (the versions that lives in master, may be broken!)"
-    "Install both [5] and [6] on the same machine (wings script runs after panel)"
+    "Installer la version en développement (La version MASTER : peut être cassée)"
+    "Installer les Wings en développement (La version MASTER : peut être cassée)"
+    "Installer [5] et [6] sur la même machine (Les Wings seront automatiquement lancées)"
   )
 
   actions=(
